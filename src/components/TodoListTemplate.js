@@ -2,13 +2,13 @@ import React from 'react';
 import './TodoListTemplate.css';
 
 
-// 함수형 컴포넌트
+// functional component
 // parameter : (prop) => { ... }
 const TodoListTemplate = ({form, children}) => {
     return(
         <main className="todo-list-template">
             <div className="title">
-                오늘 할 일
+                To do list
             </div>
             <section className="form-wrapper">
                 {form}
