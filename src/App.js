@@ -81,7 +81,8 @@ class App extends Component {
                         color={this.palette[this.state.color]}/>}
                 palette={<Palette
                     colors={this.palette}
-                    onClick={this.handleClick} />}
+                    onClick={this.handleClick}
+                    selectedIndex={this.state.color}/>}
             >
                 <TodoItemList
                     todos={this.state.todos}

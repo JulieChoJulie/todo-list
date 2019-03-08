@@ -1,24 +1,24 @@
 import React from 'react';
 import './Palette.css';
 
-const Color = ({color, id, onClick}) => {
+const Color = ({color, id, onClick, selected}) => {
     return (
         <div
-            className="square"
+            className={`square ${selected && 'selected'}`}
             style={{background: color}}
-            onClick={() => onClick(id)}
-        >
+            onClick={() => onClick(id)} >
         </div>
     )
 };
 
-const Palette = ({colors, onClick}) => {
+const Palette = ({colors, onClick, selectedIndex}) => {
     const palette = colors.map((color, index )=> {
         return <Color
             id={index}
             key={index}
             color={color}
-            onClick={onClick} />
+            onClick={onClick}
+            selected={selectedIndex===index && 'active'}/>
     });
     return (<div className="palette"> {palette} </div>);
 };
