@@ -3,12 +3,12 @@
     width: 512px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); /* Shadow */
     margin: 0 auto; /* center align */
-    margin-top: 4rem;
+    margin-top: 1.5rem;
 }
 
 .title {
-    padding: 2rem;
-    font-size: 2.5rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
     text-align: center;
     font-weight: 100;
     background: #22b8cf;;
@@ -21,7 +21,7 @@
 }
 
 .todos-wrapper {
-    min-heigh: 5rem;
+    min-heigh: 1rem;
 }
 
 

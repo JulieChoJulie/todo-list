@@ -73,7 +73,7 @@ class App extends Component {
                         value={this.state.input}
                         onKeyPress={this.handleKeyPress}
                         onChange={this.handleChange}
-                        onCreate={this.onCreate}
+                        onCreate={this.handleCreate}
                         color={this.palette[this.state.color]}/>}
                 palette={<Palette
                     colors={this.palette}
