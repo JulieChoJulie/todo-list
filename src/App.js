@@ -4,16 +4,12 @@ import Form from './components/Form';
 import TodoItemList from './components/TodoItemList';
 import Palette from './components/Palette';
 class App extends Component {
-    id = 3;
+    id = 0;
     palette = ['#343a40', '#f03e3e', '#12b886', '#228ae6'];
     state = {
         color: 0,
         input: '',
-        todos: [
-            {id: 0, text: ' practice ', checked:false, color: '#343a40'},
-            {id: 1, text: ' practice ', checked:false, color: '#343a40'},
-            {id: 2, text: ' practice ', checked:false, color: '#343a40'},
-            ]
+        todos: []
     };
 
     handleChange = (e) => {
