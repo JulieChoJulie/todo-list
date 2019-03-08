@@ -74,7 +74,7 @@ class App extends Component {
         return (
             <TodoListTemplate
                 form={<Form
-                        value={this.input}
+                        value={this.state.input}
                         onKeyPress={this.handleKeyPress}
                         onChange={this.handleChange}
                         onCreate={this.onCreate}
