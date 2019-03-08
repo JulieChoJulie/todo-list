@@ -23,3 +23,9 @@
 .todos-wrapper {
     min-heigh: 5rem;
 }
+
+
+.palette-wrapper {
+    background: #f1f3f5;
+    padding: 1rem;
+}

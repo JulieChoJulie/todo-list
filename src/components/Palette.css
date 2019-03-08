@@ -1,0 +1,20 @@
+.palette {
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.square {
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.square:hover {
+    opacity: 1;
+}
+
+.square+.square {
+    margin-left: 1rem;
+}
